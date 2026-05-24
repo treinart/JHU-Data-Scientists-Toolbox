@@ -6,8 +6,11 @@ output:
   pdf_document:
     toc: true
     number_sections: true
-    fig_caption: true
-geometry: margin=1in
+    latex_engine: pdflatex
+urlcolor: blue
+linkcolor: blue
+header-includes:
+  - \usepackage{float}
 ---
 
 ```{r setup, include=FALSE}
@@ -33,7 +36,9 @@ This document was created for the **Assemble Your Toolbox** course project in th
 
 The GitHub repository for this project is available here:
 
-[View the repository on GitHub](https://github.com/treinart/JHU-Data-Scientists-Toolbox)
+\href{https://github.com/treinart/JHU-Data-Scientists-Toolbox}{\textcolor{blue}{GitHub Repository: JHU-Data-Scientists-Toolbox}}
+
+Direct URL: \url{https://github.com/treinart/JHU-Data-Scientists-Toolbox}
 
 The purpose of this project is to demonstrate that the basic tools used in the Data Science Specialization have been installed, configured, and connected successfully.
 
@@ -105,8 +110,19 @@ mean(x)
 
 The plot below confirms that R Markdown can also include R-generated visual output.
 
-```{r pressure-plot, fig.width=6, fig.height=4}
-plot(pressure)
+```{r rmarkdown-plot-demo, message=FALSE, warning=FALSE, fig.width=7, fig.height=4.5}
+library(ggplot2)
+
+ggplot(mtcars, aes(x = wt, y = mpg)) +
+  geom_point(size = 3, alpha = 0.8) +
+  geom_smooth(method = "lm", se = FALSE, linewidth = 1) +
+  labs(
+    title = "Vehicle Weight vs. Fuel Efficiency",
+    subtitle = "Example R-generated plot rendered inside R Markdown",
+    x = "Vehicle Weight",
+    y = "Miles Per Gallon"
+  ) +
+  theme_minimal(base_size = 12)
 ```
 
 # Git and GitHub Setup
@@ -127,46 +143,46 @@ The GitHub repository for this project is:
 
 # Setup Evidence
 
-The screenshots below document the setup and version control workflow. The screenshots are stored in the `images/` folder of the repository and are included here as supporting evidence.
+The screenshots below document the setup and version control workflow. The screenshots are stored in the `images/` folder of this repository and included here as supporting evidence.
 
 ## RStudio Git Staging
 
 This screenshot shows the RStudio Git pane with project files prepared for commit.
 
-```{r image-rstudio-stage, echo=FALSE, out.width='90%', fig.cap='RStudio Git pane showing staged project files.'}
-show_image("images/rstudio-knit-and-stage-rmarkdown-files.png")
+```{r evidence-staging, echo=FALSE, out.width="95%", fig.align="center", fig.cap="RStudio Git pane showing staged project files.", fig.pos="H"}
+knitr::include_graphics("images/rstudio-knit-and-stage-rmarkdown-files.png")
 ```
 
 ## RStudio Review Changes and Commit Message
 
 This screenshot shows the RStudio review window and the commit message used for the project files.
 
-```{r image-rstudio-commit, echo=FALSE, out.width='90%', fig.cap='RStudio Review Changes window with commit message.'}
-show_image("images/rstudio-review-changes-commit-message.png")
+```{r evidence-review-commit, echo=FALSE, out.width="95%", fig.align="center", fig.cap="RStudio Review Changes window with commit message.", fig.pos="H"}
+knitr::include_graphics("images/rstudio-review-changes-commit-message.png")
 ```
 
 ## Git Push Confirmation
 
 This screenshot shows the Git push confirmation from RStudio.
 
-```{r image-rstudio-push, echo=FALSE, out.width='90%', fig.cap='RStudio Git push confirmation.'}
-show_image("images/rstudio-git-push-up-to-date.png")
+```{r evidence-git-push, echo=FALSE, out.width="95%", fig.align="center", fig.cap="RStudio Git push confirmation.", fig.pos="H"}
+knitr::include_graphics("images/rstudio-git-push-up-to-date.png")
 ```
 
 ## GitHub SSH Key Setup
 
 This screenshot shows the GitHub SSH key setup page with sensitive details redacted.
 
-```{r image-github-ssh, echo=FALSE, out.width='90%', fig.cap='Redacted GitHub SSH key setup evidence.'}
-show_image("images/github-ssh-key-redacted.png")
+```{r evidence-ssh-key, echo=FALSE, out.width="85%", fig.align="center", fig.cap="Redacted GitHub SSH key setup evidence.", fig.pos="H"}
+knitr::include_graphics("images/github-ssh-key-redacted.png")
 ```
 
 ## GitHub Repository After Push
 
 This screenshot shows the GitHub repository after the project files were pushed.
 
-```{r image-github-repo, echo=FALSE, out.width='90%', fig.cap='GitHub repository showing pushed project files.'}
-show_image("images/github-repo-files-after-push.png")
+```{r evidence-github-repo, echo=FALSE, out.width="95%", fig.align="center", fig.cap="GitHub repository homepage after files were pushed.", fig.pos="H"}
+knitr::include_graphics("images/github-repo-homepage-after-push.png")
 ```
 
 # Conclusion
