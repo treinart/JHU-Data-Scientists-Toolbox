@@ -4,6 +4,12 @@ This repository was created for the **Johns Hopkins University Data Scientist's 
 
 The repository documents the basic course setup for working with **R**, **RStudio**, **Git**, **GitHub**, and **R Markdown**.
 
+## Course Project Links
+
+- **Rendered HTML Report:** [assemble-your-toolbox.html](https://treinart.github.io/JHU-Data-Scientists-Toolbox/assemble-your-toolbox.html)
+- **Source R Markdown:** [`assemble-your-toolbox.Rmd`](assemble-your-toolbox.Rmd)
+- **Rendered PDF:** [`assemble-your-toolbox.pdf`](assemble-your-toolbox.pdf)
+
 ## Repository Structure
 
 <table>
@@ -19,12 +25,16 @@ The repository documents the basic course setup for working with **R**, **RStudi
       <td>Main repository root for the course setup project.</td>
     </tr>
     <tr>
-      <td><code>├── 📄 R-Programming-Course.Rproj</code></td>
-      <td>RStudio project file used to manage the local project workspace.</td>
+      <td><code>├── 📁 images/</code></td>
+      <td>Screenshots used in the final R Markdown assignment document.</td>
     </tr>
     <tr>
-      <td><code>├── 📄 TestingR.R</code></td>
-      <td>Basic R script used to confirm the local RStudio-to-GitHub workflow.</td>
+      <td><code>├── 📄 .gitignore</code></td>
+      <td>Git ignore file for local project artifacts.</td>
+    </tr>
+    <tr>
+      <td><code>├── 📄 LICENSE</code></td>
+      <td>MIT License for original repository content.</td>
     </tr>
     <tr>
       <td><code>├── 📄 My first R Markdown.Rmd</code></td>
@@ -35,24 +45,32 @@ The repository documents the basic course setup for working with **R**, **RStudi
       <td>Rendered PDF output from the initial R Markdown document.</td>
     </tr>
     <tr>
+      <td><code>├── 📄 R-Programming-Course.Rproj</code></td>
+      <td>RStudio project file used to manage the local project workspace.</td>
+    </tr>
+    <tr>
+      <td><code>├── 📄 README.md</code></td>
+      <td>This file.</td>
+    </tr>
+    <tr>
+      <td><code>├── 📄 TestingR.R</code></td>
+      <td>Basic R script used to confirm the local RStudio-to-GitHub workflow.</td>
+    </tr>
+    <tr>
       <td><code>├── 📄 assemble-your-toolbox.Rmd</code></td>
       <td>Main R Markdown document for the Assemble Your Toolbox course project.</td>
+    </tr>
+    <tr>
+      <td><code>├── 📄 assemble-your-toolbox.html</code></td>
+      <td>Rendered HTML version of the final Assemble Your Toolbox R Markdown document.</td>
     </tr>
     <tr>
       <td><code>├── 📄 assemble-your-toolbox.pdf</code></td>
       <td>Rendered PDF output from the final Assemble Your Toolbox R Markdown document.</td>
     </tr>
     <tr>
-      <td><code>├── 📁 images/</code></td>
-      <td>Screenshots used in the final R Markdown assignment document.</td>
-    </tr>
-    <tr>
-      <td><code>├── 📄 LICENSE</code></td>
-      <td>MIT License for original repository content.</td>
-    </tr>
-    <tr>
-      <td><code>└── 📄 README.md</code></td>
-      <td>This file.</td>
+      <td><code>└── 📄 my_first_R_script.R</code></td>
+      <td>Basic R script created during the RStudio setup workflow.</td>
     </tr>
   </tbody>
 </table>
@@ -81,7 +99,7 @@ This repository supports that project by showing a working local RStudio project
 
 This repository is intentionally simple. It is not a full data analysis project. It is a setup and workflow repository for the first course in the Johns Hopkins Data Science Specialization.
 
-The main assignment evidence is documented in the R Markdown file and its rendered output.
+The main assignment evidence is documented in `assemble-your-toolbox.Rmd` and rendered as both an HTML report and a PDF.
 
 ---
 
