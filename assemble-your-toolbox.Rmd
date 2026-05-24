@@ -34,6 +34,12 @@ show_image <- function(path, caption = NULL, width = "90%") {
 
 # Purpose
 
+## Assignment Note
+
+Before submitting, I realized the assignment instructions specifically referenced a repository named `datasciencecoursera`. I had already completed the setup work in this repository under the name `JHU-Data-Scientists-Toolbox`, which clearly identifies the course and contains the required setup files, markdown file, screenshots, and GitHub workflow evidence.
+
+The repository name is different, but the required work is documented here and the repository is public and accessible.
+
 This document was created for the **Assemble Your Toolbox** course project in the Johns Hopkins University **Data Scientist's Toolbox** course on Coursera.
 
 The GitHub repository for this project is:
@@ -44,9 +50,17 @@ The direct HTML report is available here:
 
 [https://treinart.github.io/JHU-Data-Scientists-Toolbox/assemble-your-toolbox.html](https://treinart.github.io/JHU-Data-Scientists-Toolbox/assemble-your-toolbox.html)
 
+The required `HelloWorld.md` file is available here:
+
+[https://github.com/treinart/JHU-Data-Scientists-Toolbox/blob/main/HelloWorld.md](https://github.com/treinart/JHU-Data-Scientists-Toolbox/blob/main/HelloWorld.md)
+
+The forked `datasharing` repository is available here:
+
+[https://github.com/treinart/datasharing](https://github.com/treinart/datasharing)
+
 The purpose of this project is to demonstrate that the basic tools used in the Data Science Specialization have been installed, configured, and connected successfully.
 
-The tools demonstrated in this project are:
+The tools and course setup items demonstrated in this project are:
 
 - R
 - RStudio
@@ -55,6 +69,9 @@ The tools demonstrated in this project are:
 - R Markdown
 - CRAN packages
 - Bioconductor packages
+- GitHub Pages HTML publishing
+- `HelloWorld.md`
+- Forking a GitHub repository
 
 # R and RStudio Setup
 
@@ -139,7 +156,11 @@ The workflow demonstrated in this project was:
 2. Stage files using Git.
 3. Commit changes locally with a descriptive message.
 4. Push committed changes to GitHub.
-5. Confirm that the files appear in the GitHub repository.
+5. Create the required `HelloWorld.md` file.
+6. Pull GitHub changes back into the local RStudio project.
+7. Fork the required `jtleek/datasharing` repository.
+8. Publish the rendered HTML report through GitHub Pages.
+9. Confirm that the final files appear in the GitHub repository.
 
 The GitHub repository for this project is:
 
@@ -149,9 +170,25 @@ The direct HTML report is available here:
 
 [https://treinart.github.io/JHU-Data-Scientists-Toolbox/assemble-your-toolbox.html](https://treinart.github.io/JHU-Data-Scientists-Toolbox/assemble-your-toolbox.html)
 
+The required `HelloWorld.md` file is available here:
+
+[https://github.com/treinart/JHU-Data-Scientists-Toolbox/blob/main/HelloWorld.md](https://github.com/treinart/JHU-Data-Scientists-Toolbox/blob/main/HelloWorld.md)
+
+The forked `datasharing` repository is available here:
+
+[https://github.com/treinart/datasharing](https://github.com/treinart/datasharing)
+
 # Setup Evidence
 
 The screenshots below document the setup and version control workflow. The screenshots are stored in the `images/` folder of this repository and included here as supporting evidence.
+
+## RStudio Installation
+
+This screenshot shows RStudio open locally after installation.
+
+```{r evidence-rstudio-installed, echo=FALSE, out.width="95%", fig.align="center", fig.cap="RStudio open on the local machine.", fig.pos="H"}
+knitr::include_graphics("images/RStudio_installed.png")
+```
 
 ## RStudio Git Staging
 
@@ -185,6 +222,32 @@ This screenshot shows the GitHub SSH key setup page with sensitive details redac
 knitr::include_graphics("images/github-ssh-key-redacted.png")
 ```
 
+## HelloWorld Markdown File
+
+This screenshot shows the required `HelloWorld.md` file created in GitHub with the line `## This is a markdown file`.
+
+```{r evidence-helloworld, echo=FALSE, out.width="95%", fig.align="center", fig.cap="HelloWorld.md file created in the GitHub repository.", fig.pos="H"}
+knitr::include_graphics("images/helloworld.png")
+```
+
+This screenshot shows the `HelloWorld.md` file being pulled from GitHub back into the local RStudio project folder.
+
+```{r evidence-helloworld-pull, echo=FALSE, out.width="95%", fig.align="center", fig.cap="Git pull in RStudio after creating HelloWorld.md on GitHub.", fig.pos="H"}
+knitr::include_graphics("images/helloworld_pull.png")
+```
+
+## Forked Data Sharing Repository
+
+The assignment also required forking the `jtleek/datasharing` repository. The forked repository is available here:
+
+[https://github.com/treinart/datasharing](https://github.com/treinart/datasharing)
+
+This screenshot shows the forked repository under my GitHub account.
+
+```{r evidence-datasharing-fork, echo=FALSE, out.width="95%", fig.align="center", fig.cap="Forked datasharing repository under my GitHub account.", fig.pos="H"}
+knitr::include_graphics("images/create_fork.png")
+```
+
 ## GitHub Repository After Push
 
 This screenshot shows the GitHub repository after the project files were pushed.
@@ -195,6 +258,10 @@ knitr::include_graphics("images/github-repo-homepage-after-push.png")
 
 # Conclusion
 
-This project demonstrates that the required course toolbox has been assembled. R and RStudio are installed locally, R packages can be installed and loaded, R Markdown can be created and rendered, Git is tracking the project files, and GitHub is receiving pushed commits from the local RStudio project.
+This project demonstrates that the required course toolbox has been assembled. R and RStudio are installed locally, course-related R packages are available, R Markdown can be created and rendered, and Git is tracking the local RStudio project.
 
-The repository provides a working setup foundation for the rest of the Johns Hopkins Data Science Specialization.
+The GitHub workflow is also demonstrated through staging, committing, pushing, pulling, creating the required `HelloWorld.md` file, and forking the required `jtleek/datasharing` repository.
+
+The final repository includes the source R Markdown file, rendered PDF, rendered HTML report, setup screenshots, the required `HelloWorld.md` file, and links to both the project repository and the forked data sharing repository.
+
+This setup provides a working foundation for the rest of the Johns Hopkins Data Science Specialization.
