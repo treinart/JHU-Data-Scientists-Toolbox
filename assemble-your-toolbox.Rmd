@@ -31,6 +31,10 @@ show_image <- function(path, caption = NULL, width = "90%") {
 
 This document was created for the **Assemble Your Toolbox** course project in the Johns Hopkins University **Data Scientist's Toolbox** course on Coursera.
 
+The GitHub repository for this project is available here:
+
+[View the repository on GitHub](https://github.com/treinart/JHU-Data-Scientists-Toolbox)
+
 The purpose of this project is to demonstrate that the basic tools used in the Data Science Specialization have been installed, configured, and connected successfully.
 
 The tools demonstrated in this project are:
@@ -56,7 +60,7 @@ getwd()
 
 # Package Setup
 
-The course introduced package installation from CRAN, Bioconductor, and GitHub. The packages below were installed or used as part of the course setup process.
+The following packages were installed during the course setup activities. The table below confirms that each package is available in my local R library.
 
 ```{r package-check}
 course_packages <- c(
@@ -77,7 +81,7 @@ package_check <- data.frame(
 package_check
 ```
 
-The main setup packages were also loaded to confirm that the local R environment is working.
+The packages below are loaded to confirm that the installed R environment can run course-related package commands successfully.
 
 ```{r load-course-packages}
 library(ggplot2)
@@ -85,7 +89,7 @@ library(lme4)
 library(BiocManager)
 library(GenomicFeatures)
 
-cat("Course setup packages loaded successfully.")
+cat("Course package check completed successfully.")
 ```
 
 # R Markdown Demonstration
