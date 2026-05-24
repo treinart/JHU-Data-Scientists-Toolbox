@@ -1,0 +1,172 @@
+---
+title: "Assemble Your Toolbox"
+author: "Travis Reinart"
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    toc: true
+    number_sections: true
+    fig_caption: true
+geometry: margin=1in
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  fig.align = "center"
+)
+
+show_image <- function(path, caption = NULL, width = "90%") {
+  if (file.exists(path)) {
+    knitr::include_graphics(path)
+  } else {
+    cat(paste0("Image not found: `", path, "`\n"))
+  }
+}
+```
+
+# Purpose
+
+This document was created for the **Assemble Your Toolbox** course project in the Johns Hopkins University **Data Scientist's Toolbox** course on Coursera.
+
+The purpose of this project is to demonstrate that the basic tools used in the Data Science Specialization have been installed, configured, and connected successfully.
+
+The tools demonstrated in this project are:
+
+- R
+- RStudio
+- Git
+- GitHub
+- R Markdown
+- CRAN packages
+- Bioconductor packages
+
+# R and RStudio Setup
+
+R and RStudio were installed locally and used to create this project. The project was managed through an RStudio Project folder and connected to GitHub using Git version control.
+
+The local R version and working directory are shown below.
+
+```{r r-version-and-directory}
+R.version.string
+getwd()
+```
+
+# Package Setup
+
+The course introduced package installation from CRAN, Bioconductor, and GitHub. The packages below were installed or used as part of the course setup process.
+
+```{r package-check}
+course_packages <- c(
+  "ggplot2",
+  "devtools",
+  "lme4",
+  "BiocManager",
+  "GenomicFeatures",
+  "rmarkdown",
+  "knitr"
+)
+
+package_check <- data.frame(
+  Package = course_packages,
+  Installed = course_packages %in% rownames(installed.packages())
+)
+
+package_check
+```
+
+The main setup packages were also loaded to confirm that the local R environment is working.
+
+```{r load-course-packages}
+library(ggplot2)
+library(lme4)
+library(BiocManager)
+library(GenomicFeatures)
+
+cat("Course setup packages loaded successfully.")
+```
+
+# R Markdown Demonstration
+
+R Markdown combines regular written explanation, R code, and code output in one reproducible document. This file was created in RStudio and knitted into a rendered output document.
+
+The simple R code below confirms that code chunks run inside the R Markdown document.
+
+```{r simple-r-example}
+x <- c(1, 2, 3, 4, 5)
+mean(x)
+```
+
+The plot below confirms that R Markdown can also include R-generated visual output.
+
+```{r pressure-plot, fig.width=6, fig.height=4}
+plot(pressure)
+```
+
+# Git and GitHub Setup
+
+Git was used for local version control, and GitHub was used as the remote repository.
+
+The workflow demonstrated in this project was:
+
+1. Create and edit files in RStudio.
+2. Stage files using Git.
+3. Commit changes locally with a descriptive message.
+4. Push committed changes to GitHub.
+5. Confirm that the files appear in the GitHub repository.
+
+The GitHub repository for this project is:
+
+[https://github.com/treinart/JHU-Data-Scientists-Toolbox](https://github.com/treinart/JHU-Data-Scientists-Toolbox)
+
+# Setup Evidence
+
+The screenshots below document the setup and version control workflow. The screenshots are stored in the `images/` folder of the repository and are included here as supporting evidence.
+
+## RStudio Git Staging
+
+This screenshot shows the RStudio Git pane with project files prepared for commit.
+
+```{r image-rstudio-stage, echo=FALSE, out.width='90%', fig.cap='RStudio Git pane showing staged project files.'}
+show_image("images/rstudio-knit-and-stage-rmarkdown-files.png")
+```
+
+## RStudio Review Changes and Commit Message
+
+This screenshot shows the RStudio review window and the commit message used for the project files.
+
+```{r image-rstudio-commit, echo=FALSE, out.width='90%', fig.cap='RStudio Review Changes window with commit message.'}
+show_image("images/rstudio-review-changes-commit-message.png")
+```
+
+## Git Push Confirmation
+
+This screenshot shows the Git push confirmation from RStudio.
+
+```{r image-rstudio-push, echo=FALSE, out.width='90%', fig.cap='RStudio Git push confirmation.'}
+show_image("images/rstudio-git-push-up-to-date.png")
+```
+
+## GitHub SSH Key Setup
+
+This screenshot shows the GitHub SSH key setup page with sensitive details redacted.
+
+```{r image-github-ssh, echo=FALSE, out.width='90%', fig.cap='Redacted GitHub SSH key setup evidence.'}
+show_image("images/github-ssh-key-redacted.png")
+```
+
+## GitHub Repository After Push
+
+This screenshot shows the GitHub repository after the project files were pushed.
+
+```{r image-github-repo, echo=FALSE, out.width='90%', fig.cap='GitHub repository showing pushed project files.'}
+show_image("images/github-repo-files-after-push.png")
+```
+
+# Conclusion
+
+This project demonstrates that the required course toolbox has been assembled. R and RStudio are installed locally, R packages can be installed and loaded, R Markdown can be created and rendered, Git is tracking the project files, and GitHub is receiving pushed commits from the local RStudio project.
+
+The repository provides a working setup foundation for the rest of the Johns Hopkins Data Science Specialization.
