@@ -3,14 +3,16 @@ title: "Assemble Your Toolbox"
 author: "Travis Reinart"
 date: "`r Sys.Date()`"
 output:
+  html_document:
+    toc: true
+    df_print: paged
   pdf_document:
     toc: true
     number_sections: true
     latex_engine: pdflatex
 urlcolor: blue
 linkcolor: blue
-header-includes:
-  - \usepackage{float}
+header-includes: \usepackage{float}
 ---
 
 ```{r setup, include=FALSE}
