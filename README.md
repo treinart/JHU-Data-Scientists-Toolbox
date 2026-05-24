@@ -9,6 +9,8 @@ The repository documents the basic course setup for working with **R**, **RStudi
 - **Rendered HTML Report:** [assemble-your-toolbox.html](https://treinart.github.io/JHU-Data-Scientists-Toolbox/assemble-your-toolbox.html)
 - **Source R Markdown:** [`assemble-your-toolbox.Rmd`](assemble-your-toolbox.Rmd)
 - **Rendered PDF:** [`assemble-your-toolbox.pdf`](assemble-your-toolbox.pdf)
+- **Required HelloWorld File:** [`HelloWorld.md`](HelloWorld.md)
+- **Forked Data Sharing Repository:** [treinart/datasharing](https://github.com/treinart/datasharing)
 
 ## Repository Structure
 
@@ -26,7 +28,7 @@ The repository documents the basic course setup for working with **R**, **RStudi
     </tr>
     <tr>
       <td><code>├── 📁 images/</code></td>
-      <td>Screenshots used in the final R Markdown assignment document.</td>
+      <td>Screenshots used in the final R Markdown assignment document, including RStudio setup, GitHub workflow, HelloWorld evidence, and forked repository evidence.</td>
     </tr>
     <tr>
       <td><code>├── 📄 .gitignore</code></td>
@@ -35,6 +37,10 @@ The repository documents the basic course setup for working with **R**, **RStudi
     <tr>
       <td><code>├── 📄 LICENSE</code></td>
       <td>MIT License for original repository content.</td>
+    </tr>
+    <tr>
+      <td><code>├── 📄 HelloWorld.md</code></td>
+      <td>Required markdown file created for the course assignment.</td>
     </tr>
     <tr>
       <td><code>├── 📄 My first R Markdown.Rmd</code></td>
@@ -92,6 +98,8 @@ This repository supports that project by showing a working local RStudio project
 - Git
 - GitHub
 - R Markdown
+- GitHub Pages
+- GitHub repository forking
 
 ---
 
@@ -99,7 +107,7 @@ This repository supports that project by showing a working local RStudio project
 
 This repository is intentionally simple. It is not a full data analysis project. It is a setup and workflow repository for the first course in the Johns Hopkins Data Science Specialization.
 
-The main assignment evidence is documented in `assemble-your-toolbox.Rmd` and rendered as both an HTML report and a PDF.
+The main assignment evidence is documented in `assemble-your-toolbox.Rmd` and rendered as both an HTML report and a PDF. The repository also includes the required `HelloWorld.md` file and links to the forked `datasharing` repository.
 
 ---
 
