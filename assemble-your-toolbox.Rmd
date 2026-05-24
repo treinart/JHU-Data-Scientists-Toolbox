@@ -36,11 +36,13 @@ show_image <- function(path, caption = NULL, width = "90%") {
 
 This document was created for the **Assemble Your Toolbox** course project in the Johns Hopkins University **Data Scientist's Toolbox** course on Coursera.
 
-The GitHub repository for this project is available here:
+The GitHub repository for this project is:
 
-\href{https://github.com/treinart/JHU-Data-Scientists-Toolbox}{\textcolor{blue}{GitHub Repository: JHU-Data-Scientists-Toolbox}}
+[https://github.com/treinart/JHU-Data-Scientists-Toolbox](https://github.com/treinart/JHU-Data-Scientists-Toolbox)
 
-Direct URL: \url{https://github.com/treinart/JHU-Data-Scientists-Toolbox}
+The direct HTML report is available here:
+
+[https://treinart.github.io/JHU-Data-Scientists-Toolbox/assemble-your-toolbox.html](https://treinart.github.io/JHU-Data-Scientists-Toolbox/assemble-your-toolbox.html)
 
 The purpose of this project is to demonstrate that the basic tools used in the Data Science Specialization have been installed, configured, and connected successfully.
 
@@ -142,6 +144,10 @@ The workflow demonstrated in this project was:
 The GitHub repository for this project is:
 
 [https://github.com/treinart/JHU-Data-Scientists-Toolbox](https://github.com/treinart/JHU-Data-Scientists-Toolbox)
+
+The direct HTML report is available here:
+
+[https://treinart.github.io/JHU-Data-Scientists-Toolbox/assemble-your-toolbox.html](https://treinart.github.io/JHU-Data-Scientists-Toolbox/assemble-your-toolbox.html)
 
 # Setup Evidence
 
